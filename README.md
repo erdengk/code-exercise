@@ -18,3 +18,8 @@
 1. [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
    - :memo: :[仓库代码](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/Search.java)
    - [总结]()
+### 移除元素
+
+1. [27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
+   - :memo: :[仓库代码](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/Search.java)
+   - [总结]()
