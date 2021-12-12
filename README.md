@@ -13,7 +13,7 @@
 
 ## 数组
 
-### 二分法及二分法几种变式题
+### 二分法
 
 1. [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
    - :memo: :[仓库代码](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/Search.java)
