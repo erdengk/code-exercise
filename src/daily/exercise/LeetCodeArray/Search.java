@@ -104,7 +104,9 @@ public class Search {
      * @return
      */
     public int removeDuplicates(int[] nums) {
-        if(nums.length<=1)return nums.length;
+        if(nums.length<=1) {
+            return nums.length;
+        }
         int s=0;
         for(int f=1;f<nums.length;f++){
             if(nums[f]!=nums[s]){
@@ -128,6 +130,38 @@ public class Search {
         }
         // 数组长度为索引 + 1
         return slow + 1;
+    }
+
+
+    class ListNode {
+          int val;
+          ListNode next;
+          ListNode() {}
+          ListNode(int val) { this.val = val; }
+          ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
+
+    /**
+     * 83. 删除排序链表中的重复元素https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
+     * @param head
+     * @return
+     */
+    public ListNode deleteDuplicates(ListNode head) {
+        if(head==null||head.next==null) {
+            return head;
+        }        ListNode s=head;
+        ListNode f=head.next;
+        while(f!=null){
+            if(s.val!=f.val){
+                s.next=f;
+                s=s.next;
+                f=f.next;
+            }else{
+                f=f.next;
+            }
+        }
+        s.next=null;
+        return head;
     }
 
 }
