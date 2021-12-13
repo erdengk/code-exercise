@@ -78,90 +78,54 @@ public class Search {
      *  num[2]=3  找到了target
      */
 
-    //TODO
     //二分边界查找最优算法
 
-
     /**
-     * 27. 移除元素https://leetcode-cn.com/problems/remove-element/
+     *34. 在排序数组中查找元素的第一个和最后一个位置 https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
      * @param nums
-     * @param val
+     * @param target
      * @return
      */
-    public int removeElement(int[] nums, int val) {
-        int s=0;
-        for (int f=0; f<nums.length ; f++) {
-            if(nums[f]!=val) {
-                nums[s++] = nums[f];
-            }
+    public int[] searchRange(int[] nums, int target) {
+        if(nums.length==0 || (nums.length==1&&nums[0]!=target)){
+            return new int[]{-1,-1};
         }
-        return s;
+        int left = searchLeft(nums,target);
+        int right = searchRight(nums,target);
+        return new int[]{left,right};
     }
 
-    /**
-     * 26. 删除有序数组中的重复项https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
-     * @param nums
-     * @return
-     */
-    public int removeDuplicates(int[] nums) {
-        if(nums.length<=1) {
-            return nums.length;
-        }
-        int s=0;
-        for(int f=1;f<nums.length;f++){
-            if(nums[f]!=nums[s]){
-                nums[++s]=nums[f];
+    private int searchRight(int[] nums, int target) {
+        int l=0;
+        int r=nums.length-1;
+        while (l<=r){
+            int mid = l+(r-l)/2;
+            if(nums[mid]==target){
+                l=mid+1;
+            }else if(nums[mid]>target){
+                r=mid-1;
+            }else if(nums[mid]<target){
+                l=mid+1;
             }
         }
-        return s+1;
-    }
-    int removeDuplicatesTwo(int[] nums) {
-        if (nums.length == 0) {
-            return 0;
-        }
-        int slow = 0, fast = 0;
-        while (fast < nums.length) {
-            if (nums[fast] != nums[slow]) {
-                slow++;
-                // 维护 nums[0..slow] 无重复
-                nums[slow] = nums[fast];
-            }
-            fast++;
-        }
-        // 数组长度为索引 + 1
-        return slow + 1;
+        return r>=0 ? (nums[r]==target ? r:-1) : -1;
     }
 
-
-    class ListNode {
-          int val;
-          ListNode next;
-          ListNode() {}
-          ListNode(int val) { this.val = val; }
-          ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-
-    /**
-     * 83. 删除排序链表中的重复元素https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
-     * @param head
-     * @return
-     */
-    public ListNode deleteDuplicates(ListNode head) {
-        if(head==null||head.next==null) {
-            return head;
-        }        ListNode s=head;
-        ListNode f=head.next;
-        while(f!=null){
-            if(s.val!=f.val){
-                s.next=f;
-                s=s.next;
-                f=f.next;
-            }else{
-                f=f.next;
+    private int searchLeft(int[] nums, int target) {
+        int l=0;
+        int r=nums.length-1;
+        while (l<=r){
+            int mid = l+(r-l)/2;
+            if(nums[mid]==target){
+                r=mid-1;
+            }else if(nums[mid]>target){
+                r=mid-1;
+            }else if(nums[mid]<target){
+                l=mid+1;
             }
         }
-        s.next=null;
-        return head;
+        return l<=nums.length-1 ? ( nums[l]==target ? l:-1) : -1;
     }
+
 
 }
