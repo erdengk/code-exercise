@@ -20,7 +20,14 @@
 愿吾与诸君共勉 
 
 
-备注:  :ok_hand: 表示**已完成,并有相应的总结**;
+## 补充
+
+:ok_hand: 表示**已完成,并有相应的总结**;
+
+[个人在 CSDN 上的算法学习笔记 ](https://blog.csdn.net/qq_41852212/article/details/120628784)
+
+[左老师算法课学习建议](http://erdengk.top/archives/zuo-lao-shi-suan-fa-ke-xue-xi-jian-yi)
+
 
 > **尚未完成，因为生命不息，学习不止，持续更新中...!**
 
