@@ -51,9 +51,31 @@
 
 ### 有序数组的平方
 
-### 长度最小的子数组
+1. :ok_hand: [977. 有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/)
 
-### 螺旋矩阵II
+### 长度最小的子数组 (滑动窗口)
+
+未完成 ： [滑动窗口总结]()
+
+练习：
+
+1. [209. 长度最小的子数组 （mid）](https://leetcode-cn.com/problems/minimum-size-subarray-sum/)
+2. [3. 无重复字符的最长子串 （mid）](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
+3. [76. 最小覆盖子串 （hard）](https://leetcode-cn.com/problems/minimum-window-substring/)
+4. [438. 找到字符串中所有字母异位词 （mid）](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/)
+5. [567. 字符串的排列 （mid）](https://leetcode-cn.com/problems/permutation-in-string/)
+6. [904. 水果成篮 （mid）](https://leetcode-cn.com/problems/fruit-into-baskets/)
+7. [30. 串联所有单词的子串（hard）](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/)
+8. [239. 滑动窗口最大值 （hard）](https://leetcode-cn.com/problems/sliding-window-maximum/)
+9. [632. 最小区间（hard）](https://leetcode-cn.com/problems/smallest-range-covering-elements-from-k-lists/)
+10. [727. 最小窗口子序列 (hard 付费)](https://leetcode-cn.com/problems/minimum-window-subsequence/ )
+
+
+
+
+### 螺旋矩阵II （矩阵的各种遍历）
+
+
 
 ## 链表
 
