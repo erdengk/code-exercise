@@ -9,23 +9,25 @@ package daily.exercise.lanqiaoTest1;
 
 public class LanQiaoTest2 {
 
-    public static void main(String[] args) {
+    public static void main( String[] args ) {
         String s = "123456789";
-        process(s.toCharArray(),0);
+        process( s.toCharArray(), 0 );
     }
 
 
-    private static void process(char[] ch, int i) {
-        if(i==ch.length){
-            System.out.println(String.valueOf(ch));
+    private static void process( char[] ch, int i ) {
+        if ( i == ch.length ) {
+            System.out.println( String.valueOf( ch ) );
         }
-        for(int j=i;j<ch.length;j++){
-            swap(ch,i,j);
-            process(ch,i+1);
-            swap(ch,i,j);
+        for ( int j = i; j < ch.length; j++ ) {
+            swap( ch, i, j );
+            process( ch, i + 1 );
+            swap( ch, i, j );
         }
     }
-    public static void swap(char[] chs, int i, int j) {
+
+
+    public static void swap( char[] chs, int i, int j ) {
         char tmp = chs[i];
         chs[i] = chs[j];
         chs[j] = tmp;

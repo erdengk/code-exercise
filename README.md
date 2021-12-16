@@ -57,64 +57,58 @@
 
 ### 长度最小的子数组 (滑动窗口)
 
-未完成 ： [滑动窗口总结 1 ](http://erdengk.top/archives/windows1)
+部分完成 ： [滑动窗口总结 1 ](http://erdengk.top/archives/windows1)
+
 
 练习：
 
-注：以下目录整理来自 [wiki](https://github.com/SharingSource/LogicStack-LeetCode/wiki/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3) 按推荐顺序排列
+注：以下目录整理来自 [wiki](https://github.com/SharingSource/LogicStack-LeetCode/wiki/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3) 与官方推荐 按推荐顺序排列
 
 
 #### easy：
 
-4 🌟[ 594. 最长和谐子序列](https://leetcode-cn.com/problems/longest-harmonious-subsequence/)
 
-5 🌟 [643. 子数组最大平均数 I](https://leetcode-cn.com/problems/maximum-average-subarray-i/)
-
+| 题目                                                         | 题解                                                         | 推荐度 | 备注 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------ | ---- |
+| [ 594. 最长和谐子序列](https://leetcode-cn.com/problems/longest-harmonious-subsequence/) | [题解](https://leetcode-cn.com/problems/longest-harmonious-subsequence/solution/hua-dong-chuang-kou-by-erdengk-cb5v/) | 4🌟     |      |
+| [643. 子数组最大平均数 I](https://leetcode-cn.com/problems/maximum-average-subarray-i/) | [题解](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/window/FindMaxAverage.java) | 5🌟     |      |
 
 
 #### mid：
 
-5 🌟 [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
 
-4 🌟 [187. 重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/)
-
-4 🌟 [1423. 可获得的最大点数](https://leetcode-cn.com/problems/maximum-points-you-can-obtain-from-cards/)
-
-4 🌟 [424. 替换后的最长重复字符](https://leetcode-cn.com/problems/longest-repeating-character-replacement/)
-
-4 🌟 [438. 找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/)
-
-3 🌟 [567. 字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/)
-
-3 🌟 [1004. 最大连续1的个数 III](https://leetcode-cn.com/problems/max-consecutive-ones-iii/)
-
-3 🌟 [1052. 爱生气的书店老板](https://leetcode-cn.com/problems/grumpy-bookstore-owner/)
-
-3 🌟 [1208. 尽可能使字符串相等](https://leetcode-cn.com/problems/get-equal-substrings-within-budget/)
-
-3 🌟 [220. 存在重复元素 III](https://leetcode-cn.com/problems/contains-duplicate-iii/)
- 
-3 🌟 [1438. 绝对差不超过限制的最长连续子数组](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
-
-3 🌟 [1838. 最高频元素的频数](https://leetcode-cn.com/problems/frequency-of-the-most-frequent-element/)
-
-?  🌟  [904. 水果成篮 （mid）](https://leetcode-cn.com/problems/fruit-into-baskets/)
-
-？🌟 [76. 最小覆盖子串 （hard）](https://leetcode-cn.com/problems/minimum-window-substring/)
-
-？🌟 [209. 长度最小的子数组 （mid）](https://leetcode-cn.com/problems/minimum-size-subarray-sum/)    [个人题解](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/MinSubArrayLen.java)
+| 题目                                                         | 题解                                                         | 推荐度 | 备注 |
+| :----------------------------------------------------------- | ------------------------------------------------------------ | ------ | ---- |
+| [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) |                                                              | 5🌟     |      |
+| [187. 重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/) |                                                              | 4🌟     |      |
+| [1423. 可获得的最大点数](https://leetcode-cn.com/problems/maximum-points-you-can-obtain-from-cards/) |                                                              | 4🌟     |      |
+| [424. 替换后的最长重复字符](https://leetcode-cn.com/problems/longest-repeating-character-replacement/) |                                                              | 4🌟     |      |
+| [438. 找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) |                                                              | 4🌟     |      |
+| [567. 字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) |                                                              | 3🌟     |      |
+| [1004. 最大连续1的个数 III](https://leetcode-cn.com/problems/max-consecutive-ones-iii/) |                                                              | 3🌟     |      |
+| [1052. 爱生气的书店老板](https://leetcode-cn.com/problems/grumpy-bookstore-owner/) |                                                              | 3🌟     |      |
+| [1208. 尽可能使字符串相等](https://leetcode-cn.com/problems/get-equal-substrings-within-budget/) |                                                              | 3🌟     |      |
+| [220. 存在重复元素 III](https://leetcode-cn.com/problems/contains-duplicate-iii/) |                                                              | 3🌟     |      |
+| [1438. 绝对差不超过限制的最长连续子数组](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) |                                                              | 3🌟     |      |
+| [1838. 最高频元素的频数](https://leetcode-cn.com/problems/frequency-of-the-most-frequent-element/) |                                                              | 3🌟     |      |
+| [904. 水果成篮 （mid）](https://leetcode-cn.com/problems/fruit-into-baskets/) |                                                              |        |      |
+| [76. 最小覆盖子串 （hard）](https://leetcode-cn.com/problems/minimum-window-substring/) |                                                              |        |      |
+| [209. 长度最小的子数组 （mid）](https://leetcode-cn.com/problems/minimum-size-subarray-sum/) | [题解](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/MinSubArrayLen.java) |        |      |
 
 #### hard：
 
-5 🌟 [480. 滑动窗口中位数](https://leetcode-cn.com/problems/sliding-window-median/)
 
-4 🌟 [992. K 个不同整数的子数组](https://leetcode-cn.com/problems/subarrays-with-k-different-integers/)
 
-4 🌟 [1610. 可见点的最大数目](https://leetcode-cn.com/problems/maximum-number-of-visible-points/)
+| 题目                                                         | 题解 | 推荐度 | 备注 |
+| ------------------------------------------------------------ | ---- | ------ | ---- |
+| [480. 滑动窗口中位数](https://leetcode-cn.com/problems/sliding-window-median/) |      | 5🌟     |      |
+| [992. K 个不同整数的子数组](https://leetcode-cn.com/problems/subarrays-with-k-different-integers/) |      | 4🌟     |      |
+| [1610. 可见点的最大数目](https://leetcode-cn.com/problems/maximum-number-of-visible-points/) |      | 4🌟     |      |
+| [30. 串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/) |      | 2🌟     |      |
+| [632. 最小区间（hard）](https://leetcode-cn.com/problems/smallest-range-covering-elements-from-k-lists/) |      | ？     |      |
 
-2 🌟 [30. 串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/)
 
-? 🌟 [632. 最小区间（hard）](https://leetcode-cn.com/problems/smallest-range-covering-elements-from-k-lists/)
+
 
 
 

@@ -10,21 +10,26 @@ import java.util.HashSet;
  */
 
 public class FullCombination {
-    public static HashSet<String> set =new HashSet<>();
-    private static void print(char[] chs, int i, String s) {
-        if(i==chs.length){
-            if(!set.contains(s)){
-                System.out.println(s);
+
+    public static HashSet<String> set = new HashSet<>();
+
+
+    private static void print( char[] chs, int i, String s ) {
+        if ( i == chs.length ) {
+            if ( !set.contains( s ) ) {
+                System.out.println( s );
                 return;
             }
         }
-        print(chs,i+1,s);
-        print(chs,i+1,s+chs[i]);
+        print( chs, i + 1, s );
+        print( chs, i + 1, s + chs[i] );
     }
 
-    public static void main(String[] args) {
-        String s="123";
-        print(s.toCharArray(),0,"");
+
+    public static void main( String[] args ) {
+        String s = "123";
+        print( s.toCharArray(), 0, "" );
     }
+
 }
 

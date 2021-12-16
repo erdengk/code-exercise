@@ -1,4 +1,4 @@
-package daily.exercise.LeetCodeArray;
+package daily.exercise.LeetCodeArray.window;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,33 +13,32 @@ import java.util.Map;
 public class LengthOfLongestSubstring {
 
     /**
-     *[3. 无重复字符的最长子串 （mid）](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
+     * [3. 无重复字符的最长子串 （mid）](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
+     *
      * @param s
      * @return
      */
-    public int lengthOfLongestSubstring(String s) {
-        if ( s.length()<=1 ){
+    public int lengthOfLongestSubstring( String s ) {
+        if ( s.length() <= 1 ) {
             return s.length();
         }
-        HashMap<Character,Integer> map = new HashMap<>();
+        HashMap<Character, Integer> map = new HashMap<>();
         int left = 0, right = 0;
-        int res=0;
-        while (right < s.length()) {
+        int res = 0;
+        while ( right < s.length() ) {
             // 增大窗口
             char c = s.charAt( right );
-            if(map.containsKey( c )) {
+            if ( map.containsKey( c ) ) {
                 //此时出现了重复的字母，需要更新窗口开始位置
-                left = Math.max( left, map.get(c) + 1 );
+                left = Math.max( left, map.get( c ) + 1 );
             }
             //更新 c 所代表字符最晚出现位置
-            map.put( c,right );
-            res = Math.max( res,right-left+1);
+            map.put( c, right );
+            res = Math.max( res, right - left + 1 );
             right++;
         }
         return res;
     }
-
-
 
 
 }

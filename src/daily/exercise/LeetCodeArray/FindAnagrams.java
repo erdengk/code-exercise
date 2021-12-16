@@ -11,37 +11,41 @@ import java.util.List;
  */
 
 public class FindAnagrams {
+
     /**
-     *  [438. 找到字符串中所有字母异位词 （mid）](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/)
+     * [438. 找到字符串中所有字母异位词 （mid）](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/)
+     *
      * @param s
      * @param p
-     * @return
-     * 参考 https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/solution/gong-shui-san-xie-shuang-zhi-zhen-shi-xi-t5hc/
+     * @return 参考 https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/solution/gong-shui-san-xie-shuang-zhi-zhen-shi-xi-t5hc/
      */
-    public List<Integer> findAnagrams(String s, String p) {
+    public List<Integer> findAnagrams( String s, String p ) {
         List<Integer> res = new ArrayList<>();
-        int []c1=new int[26];
-        int []c2=new int[26];
-        int l=0;
-        for(int i=0;i<p.length();i++){
-            c2[p.charAt(i)-'a']++;
+        int[] c1 = new int[26];
+        int[] c2 = new int[26];
+        int l = 0;
+        for ( int i = 0; i < p.length(); i++ ) {
+            c2[p.charAt( i ) - 'a']++;
         }
-        for(int r=0 ;r<s.length();r++){
-            c1[s.charAt(r)-'a']++;
+        for ( int r = 0; r < s.length(); r++ ) {
+            c1[s.charAt( r ) - 'a']++;
             // 如果 l到r 之间的距离超过了 p 的长度，就将最前面的字符频率-1
-            if((r+1-l)>p.length()) {
-                c1[s.charAt(l++)-'a']--;
+            if ( (r + 1 - l) > p.length() ) {
+                c1[s.charAt( l++ ) - 'a']--;
             }
-            if(check(c1,c2)){
-                res.add(l);
+            if ( check( c1, c2 ) ) {
+                res.add( l );
             }
         }
-        return  res;
+        return res;
     }
+
 
     private Boolean check( int[] c1, int[] c2 ) {
         for ( int i = 0; i < c1.length; i++ ) {
-            if(c1[i]!=c2[i])return false;
+            if ( c1[i] != c2[i] ) {
+                return false;
+            }
         }
         return true;
     }

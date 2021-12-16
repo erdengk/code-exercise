@@ -1,4 +1,4 @@
-package daily.exercise.LeetCodeArray;
+package daily.exercise.LeetCodeArray.window;
 
 /**
  * @ClassName: TotalFruit
@@ -10,13 +10,15 @@ package daily.exercise.LeetCodeArray;
 public class TotalFruit {
 
     /**
-     *[904. 水果成篮](https://leetcode-cn.com/problems/fruit-into-baskets/)
+     * [904. 水果成篮](https://leetcode-cn.com/problems/fruit-into-baskets/)
+     *
      * @param fruits
      * @return
      */
-    public int totalFruit(int[] fruits) {
-        int res=0;
+    public int totalFruit( int[] fruits ) {
+        int res = 0;
 
         return res;
     }
+
 }

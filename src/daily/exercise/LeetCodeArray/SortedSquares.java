@@ -14,20 +14,20 @@ public class SortedSquares {
      * @param nums
      * @return
      */
-    public int[] sortedSquares(int[] nums) {
-        int []res = new int[nums.length];
-        int n=nums.length-1;
-        int l=0;
-        int r=nums.length-1;
+    public int[] sortedSquares( int[] nums ) {
+        int[] res = new int[nums.length];
+        int n = nums.length - 1;
+        int l = 0;
+        int r = nums.length - 1;
         for ( int i = 0; i < nums.length; i++ ) {
-            nums[i]=nums[i]*nums[i];
+            nums[i] = nums[i] * nums[i];
         }
-        while(l<r){
-            if(nums[l]<=nums[r]){
-                res[n--]=nums[r];
+        while ( l < r ) {
+            if ( nums[l] <= nums[r] ) {
+                res[n--] = nums[r];
                 r--;
-            }else if(nums[l]>nums[r]){
-                res[n--]=nums[l];
+            } else if ( nums[l] > nums[r] ) {
+                res[n--] = nums[l];
                 l++;
             }
         }
