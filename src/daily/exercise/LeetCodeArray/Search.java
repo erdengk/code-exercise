@@ -1,6 +1,8 @@
 package daily.exercise.LeetCodeArray;
 
 
+import java.util.HashMap;
+
 public class Search {
 
     /**
@@ -134,6 +136,5 @@ public class Search {
         }
         return l <= nums.length - 1 ? (nums[l] == target ? l : -1) : -1;
     }
-
 
 }
