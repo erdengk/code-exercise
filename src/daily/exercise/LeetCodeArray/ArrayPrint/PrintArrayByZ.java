@@ -13,6 +13,7 @@ import java.util.List;
 public class PrintArrayByZ {
 
     /*
+
      给定一个矩阵matrix，按照“之”字形的方式打印这个矩阵。例如
 
     1,8,6,7

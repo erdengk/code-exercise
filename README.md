@@ -79,7 +79,7 @@
 
 | 题目                                                         | 题解                                                         | 推荐度 | 备注 |
 | :----------------------------------------------------------- | ------------------------------------------------------------ | ------ | ---- |
-| [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) |                                                              | 5🌟     |      |
+| [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [题解](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/window/LengthOfLongestSubstring.java) | 5🌟     |      |
 | [187. 重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/) |                                                              | 4🌟     |      |
 | [1423. 可获得的最大点数](https://leetcode-cn.com/problems/maximum-points-you-can-obtain-from-cards/) |                                                              | 4🌟     |      |
 | [424. 替换后的最长重复字符](https://leetcode-cn.com/problems/longest-repeating-character-replacement/) |                                                              | 4🌟     |      |
@@ -119,7 +119,7 @@
 | [59. 螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii/) |      | 4🌟     |      |
 | [54. 螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/) |      | 5🌟     |      |
 | [剑指 Offer 29. 顺时针打印矩阵](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/) |      | 4🌟     |      |
-| [之字形打印矩阵]()                                           |      | 5🌟     |      |
+| [之字形打印矩阵](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/ArrayPrint/PrintArrayByZ.java)                                           |      | 5🌟     |      |
 | [48. 旋转图像](https://leetcode-cn.com/problems/rotate-image/) |      | 5🌟     |      |
 
 
@@ -144,8 +144,6 @@
 
 [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
 
-
-
 [反转链表总结]()
 
 
@@ -169,8 +167,6 @@
  [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
 
 
-### 设计链表
-[707. 设计链表](https://leetcode-cn.com/problems/design-linked-list/)
 
 
 
@@ -193,3 +189,6 @@
 
 
 ## 字符串
+
+
+
