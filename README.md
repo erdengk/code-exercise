@@ -57,9 +57,9 @@
 
 ### 长度最小的子数组 (滑动窗口)
 
-部分完成 ： [滑动窗口总结 1 ](http://erdengk.top/archives/windows1)
+部分完成 ： :ok_hand:  [滑动窗口总结 1 ](http://erdengk.top/archives/windows1)
 
-[滑动窗口总结 2 ](http://erdengk.top/archives/sui-xiang-lu-3)
+:ok_hand:  [滑动窗口总结 2 ](http://erdengk.top/archives/sui-xiang-lu-3)
 
 
 练习：
@@ -115,7 +115,7 @@
 
 这部分的推荐度由我自己评估，仅供参考
 
-[矩阵打印总结](http://erdengk.top/archives/sui-xiang-lu-4)
+:ok_hand:  [矩阵打印总结](http://erdengk.top/archives/sui-xiang-lu-4)
 
 
 | 题目                                                         |   推荐度 | 备注 |
@@ -143,8 +143,6 @@
 
 [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
 
-
-
 ### 反转链表
 
 [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
@@ -155,9 +153,7 @@
 
 
 
-[反转链表总结](http://erdengk.top/archives/sui-xiang-lu-5)
-
-
+:ok_hand:  [反转链表总结](http://erdengk.top/archives/sui-xiang-lu-5)
 
 
 
@@ -167,17 +163,21 @@
 [面试题 02.07. 链表相交](https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/)
 
 
-### 环形链表 II
+### 环形链表
 
+[141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
 
- [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+[142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
 
+[环形链表总结]()
+
+### 回文链表
+
+[234. 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)
 
 ###  设计链表
 
 [707. 设计链表](https://leetcode-cn.com/problems/design-linked-list/)
-
-
 
 ## 哈希表
 
@@ -198,6 +198,64 @@
 
 
 ## 字符串
+
+### 翻转相关
+
+[344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/)
+
+[541. 反转字符串 II](https://leetcode-cn.com/problems/reverse-string-ii/)
+
+[151. 翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
+
+[剑指 Offer 58 - II. 左旋转字符串](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
+
+
+
+### other
+
+
+
+[28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)
+
+[剑指 Offer 05. 替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)
+
+
+
+### 算法类
+
+[459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/)
+
+[KMP算法]()
+
+
+
+## 双指针法
+
+[27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
+
+[344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/)
+
+[剑指 Offer 05. 替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)
+
+[151. 翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
+
+[206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
+
+[19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
+
+[面试题 02.07. 链表相交](https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/)
+
+[142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+
+[15. 三数之和](https://leetcode-cn.com/problems/3sum/)
+
+[18. 四数之和](https://leetcode-cn.com/problems/4sum/)
+
+
+
+
+
+
 
 
 
