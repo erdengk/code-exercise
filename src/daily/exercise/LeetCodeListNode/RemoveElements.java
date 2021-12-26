@@ -34,51 +34,48 @@ public class RemoveElements {
         }
         return node.next;
     }
+
 }
 
 /**
-()中数字代表第几次出现，对应字母为当前指针指向这个节点
-
- (node-pre)-7(1-cur)-7(2)-8(1)-7(4)--9(1)
-
- (node-pre)-7(1-cur)-7(2)-8(1)-7(4)--9(1)
-
- cur.val==val
-
- (node-pre)--------7(2)-8(1)-7(4)--9(1)
-           7(1-cur)
- cur=cur.next;
-
- (node-pre)---7(2-cur)-8(1)-7(4)--9(1)
-
- cur.val==val
-
- (node-pre)----8(1)-7(4)--9(1)
-         7(2-cur)
- cur=cur.next;
-
- (node-pre)----8(1-cur)-7(4)--9(1)
- cur.val!=val
- pre = cur;
- cur=cur.next;
-
- (node-pre)----8(1--pre)-7(4-cur)--9(1)
- cur.val==val
-
- (node-pre)----8(1--pre)---------9(1)
-                        7(4-cur)
- cur=cur.next;
-
- (node-pre)----8(1--pre)---------9(1-cur)
- cur=cur.next;
-
- (node-pre)----8(1--pre)---------9(1-)-null(cur)
- 退出循环
-
- node-8-9
- return node.next;
-
-
-
-
+ * ()中数字代表第几次出现，对应字母为当前指针指向这个节点
+ *
+ * (node-pre)-7(1-cur)-7(2)-8(1)-7(4)--9(1)
+ *
+ * (node-pre)-7(1-cur)-7(2)-8(1)-7(4)--9(1)
+ *
+ * cur.val==val
+ *
+ * (node-pre)--------7(2)-8(1)-7(4)--9(1)
+ * 7(1-cur)
+ * cur=cur.next;
+ *
+ * (node-pre)---7(2-cur)-8(1)-7(4)--9(1)
+ *
+ * cur.val==val
+ *
+ * (node-pre)----8(1)-7(4)--9(1)
+ * 7(2-cur)
+ * cur=cur.next;
+ *
+ * (node-pre)----8(1-cur)-7(4)--9(1)
+ * cur.val!=val
+ * pre = cur;
+ * cur=cur.next;
+ *
+ * (node-pre)----8(1--pre)-7(4-cur)--9(1)
+ * cur.val==val
+ *
+ * (node-pre)----8(1--pre)---------9(1)
+ * 7(4-cur)
+ * cur=cur.next;
+ *
+ * (node-pre)----8(1--pre)---------9(1-cur)
+ * cur=cur.next;
+ *
+ * (node-pre)----8(1--pre)---------9(1-)-null(cur)
+ * 退出循环
+ *
+ * node-8-9
+ * return node.next;
  */

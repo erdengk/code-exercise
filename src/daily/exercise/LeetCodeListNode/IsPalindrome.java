@@ -32,14 +32,14 @@ public class IsPalindrome {
         if ( fast.next == null ) {
             // 需要将slow 指向下一个节点 再进行翻转
             slow = slow.next;
-            ListNode temp = reverseList( slow);
-            while ( temp!=null ){
-                if(temp.val!=node.val){
+            ListNode temp = reverseList( slow );
+            while ( temp != null ) {
+                if ( temp.val != node.val ) {
                     // System.out.println(temp.val +"-"+ node.val);
                     return false;
                 }
-                temp=temp.next;
-                node=node.next;
+                temp = temp.next;
+                node = node.next;
             }
             reverseStart.next = reverseList( slow );
         } else {
@@ -47,12 +47,12 @@ public class IsPalindrome {
             // 需要返回以下中点为首的 翻转后的链表
             //返回 slow.next后半部分链表
             ListNode temp = reverseList( slow.next );
-            while ( temp!=null ){
-                if(temp.val!=node.val){
+            while ( temp != null ) {
+                if ( temp.val != node.val ) {
                     return false;
                 }
-                temp=temp.next;
-                node=node.next;
+                temp = temp.next;
+                node = node.next;
             }
             reverseStart.next = reverseList( slow );
         }
@@ -80,25 +80,28 @@ public class IsPalindrome {
     /**
      * 优秀的解法
      * https://labuladong.gitee.io/algo/2/17/19/
+     *
      * @param head
      * @return
      */
-    boolean isPalindromeByLa(ListNode head) {
+    boolean isPalindromeByLa( ListNode head ) {
         ListNode slow, fast;
         slow = fast = head;
-        while (fast != null && fast.next != null) {
+        while ( fast != null && fast.next != null ) {
             slow = slow.next;
             fast = fast.next.next;
         }
 
-        if (fast != null)
+        if ( fast != null ) {
             slow = slow.next;
+        }
 
         ListNode left = head;
-        ListNode right = reverseList(slow);
-        while (right != null) {
-            if (left.val != right.val)
+        ListNode right = reverseList( slow );
+        while ( right != null ) {
+            if ( left.val != right.val ) {
                 return false;
+            }
             left = left.next;
             right = right.next;
         }

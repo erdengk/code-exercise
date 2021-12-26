@@ -195,6 +195,8 @@
 
 ## 哈希表
 
+[242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/)
+
 [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
 
 [202. 快乐数](https://leetcode-cn.com/problems/happy-number/)
@@ -205,9 +207,9 @@
 
 [15. 三数之和](https://leetcode-cn.com/problems/3sum/)
 
-[383. 赎金信](https://leetcode-cn.com/problems/ransom-note/)
-
 [18. 四数之和](https://leetcode-cn.com/problems/4sum/)
+
+[383. 赎金信](https://leetcode-cn.com/problems/ransom-note/)
 
 
 

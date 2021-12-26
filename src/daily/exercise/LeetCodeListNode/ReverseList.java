@@ -11,6 +11,7 @@ public class ReverseList {
 
     /**
      * [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
+     *
      * @param head
      * @return
      */
@@ -28,6 +29,7 @@ public class ReverseList {
         }
         return pre;
     }
+
 }
 
 /*

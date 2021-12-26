@@ -11,33 +11,42 @@ public class HasCycle {
 
     /**
      * [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
+     *
      * @param head
      * @return
      */
-    public boolean hasCycle(ListNode head) {
-        if(head==null || head.next==null) return false;
+    public boolean hasCycle( ListNode head ) {
+        if ( head == null || head.next == null ) {
+            return false;
+        }
         ListNode slow = head;
         ListNode fast = head;
 
-        while ( fast.next!=null && fast.next.next!=null){
-            slow=slow.next;
-            fast=fast.next.next;
-            if(slow==fast)return true;
+        while ( fast.next != null && fast.next.next != null ) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if ( slow == fast ) {
+                return true;
+            }
         }
         return false;
     }
-    public static boolean hasCycleTest(ListNode head) {
-        if(head==null || head.next==null) return false;
+
+
+    public static boolean hasCycleTest( ListNode head ) {
+        if ( head == null || head.next == null ) {
+            return false;
+        }
         ListNode slow = head;
         ListNode fast = head;
 
-        while ( fast.next!=null && fast.next.next!=null && fast.next.next.next!=null){
+        while ( fast.next != null && fast.next.next != null && fast.next.next.next != null ) {
 
-            System.out.println("slow.val="+slow.val+"   fast.val="+fast.val);
-            slow=slow.next;
-            fast=fast.next.next.next;
-            if(slow==fast){
-                System.out.println("slow.val="+slow.val+"   fast.val="+fast.val);
+            System.out.println( "slow.val=" + slow.val + "   fast.val=" + fast.val );
+            slow = slow.next;
+            fast = fast.next.next.next;
+            if ( slow == fast ) {
+                System.out.println( "slow.val=" + slow.val + "   fast.val=" + fast.val );
                 return true;
             }
         }
@@ -46,28 +55,27 @@ public class HasCycle {
 
 
     public static void main( String[] args ) {
-        ListNode node1  = new ListNode(1);
-        ListNode node2  = new ListNode(2);
-        ListNode node3  = new ListNode(3);
-        ListNode node4  = new ListNode(4);
-        ListNode node5  = new ListNode(5);
-        ListNode node6 = new ListNode(6);
-        node1.next=node2;
-        node2.next=node3;
-        node3.next=node4;
-        node4.next=node5;
-        node5.next=node6;
-        node6.next=node3;
+        ListNode node1 = new ListNode( 1 );
+        ListNode node2 = new ListNode( 2 );
+        ListNode node3 = new ListNode( 3 );
+        ListNode node4 = new ListNode( 4 );
+        ListNode node5 = new ListNode( 5 );
+        ListNode node6 = new ListNode( 6 );
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node5;
+        node5.next = node6;
+        node6.next = node3;
         System.out.println( hasCycleTest( node1 ) );
     }
-
 
     /**
      1.判断是否有环用快慢指针，只要相遇即为环，不用说，好理解。
      2.求环入口，就是一个数学问题转换为代码的问题。
-                     -------------------
-                     |                 ^
-                     v                 |
+     -------------------
+     |                 ^
+     v                 |
      0->1->2->3-> …… -> A ->....... -> B
      假设A为环入口，B为相遇点，设0到A距离为x,A到B距离为y,环的长度为c，快慢指针相遇是慢指针绕环n圈，快指针绕环m圈，
      由条件得快慢指针相遇时快指针走的长度是慢指针的2倍，则：

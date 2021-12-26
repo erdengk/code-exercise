@@ -10,30 +10,32 @@ package daily.exercise.LeetCodeListNode;
 public class DetectCycle {
 
     /**
-     *  [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+     * [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
      *
      * @param head
      * @return
      */
-    public ListNode detectCycle(ListNode head) {
-        if ( head==null || head.next==null)return null;
+    public ListNode detectCycle( ListNode head ) {
+        if ( head == null || head.next == null ) {
+            return null;
+        }
         ListNode slow = head;
         ListNode fast = head;
         ListNode node = null;
 
-        while ( fast.next!=null && fast.next.next!=null ){
-            slow=slow.next;
-            fast=fast.next.next;
-            if(slow==fast){
+        while ( fast.next != null && fast.next.next != null ) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if ( slow == fast ) {
                 node = slow;
                 break;
             }
         }
-        if(node != null){
+        if ( node != null ) {
             ListNode temp = head;
-            while ( temp!=node ){
-                temp=temp.next;
-                node=node.next;
+            while ( temp != node ) {
+                temp = temp.next;
+                node = node.next;
             }
             return temp;
         }
