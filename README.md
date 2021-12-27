@@ -24,7 +24,7 @@
 
 ## 补充
 
-:ok_hand: 表示**已完成,并有相应的总结**;
+:ok_hand:  表示**已完成,并有相应的总结**;
 
 [个人在 CSDN 上的算法学习笔记 ](https://blog.csdn.net/qq_41852212/article/details/120628784)
 
@@ -169,9 +169,9 @@
 
 [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
 
-[环形链表总结]()
+:ok_hand: [环形链表总结](http://erdengk.top/archives/sui-xiang-lu-6)
 
-[环形链表相关问题(解决下面这几个问题)]()
+:ok_hand: [环形链表相关问题(解决下面这几个问题)](http://erdengk.top/archives/sui-xiang-lu-6-1)
 
 - 如何证明环形链表有环？
 - 为什么双指针一定会在环内相遇？
@@ -180,8 +180,6 @@
 - 为什么此题快慢指针中，快指针比慢指针仅多走一步？为什么这么设置？
 - 如何找到入环节点
 - 证明一下上面方法的正确性
-
-
 
 
 
@@ -210,6 +208,10 @@
 [18. 四数之和](https://leetcode-cn.com/problems/4sum/)
 
 [383. 赎金信](https://leetcode-cn.com/problems/ransom-note/)
+
+
+
+[总结：nSum 问题重点是去重](http://erdengk.top/archives/sui-xiang-lu-7)
 
 
 

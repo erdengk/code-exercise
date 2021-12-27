@@ -41,7 +41,7 @@ public class ThreeSum {
             }
             int left = i + 1;
             int right = nums.length - 1;
-            while ( right> left ) {
+            while ( right > left ) {
                 int sum = nums[i] + nums[left] + nums[right];
                 // 去重复逻辑如果放在这里，0，0，0 的情况，可能直接导致 right<=left 了，
                 // 从而漏掉了 0,0,0 这种三元组

@@ -33,20 +33,54 @@ public class HasCycle {
     }
 
 
-    public static boolean hasCycleTest( ListNode head ) {
+    public static boolean hasCycleTestByTwo( ListNode head ) {
+        if ( head == null || head.next == null ) {
+            return false;
+        }
+        ListNode slow = head;
+        ListNode fast = head;
+        int slowNum = 0;
+        int fastNum = 0;
+
+        while ( fast.next != null && fast.next.next != null ) {
+            System.out.println( "未相遇：slow.val=" + slow.val + "   fast.val=" + fast.val );
+
+            slow = slow.next;
+            slowNum++;
+            fast = fast.next.next;
+            fastNum += 2;
+            if ( slow == fast ) {
+                System.out.println( "slow.val=" + slow.val + "   fast.val=" + fast.val );
+                System.out.println( slowNum + " " + fastNum );
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    public static boolean hasCycleTestByThree( ListNode head ) {
         if ( head == null || head.next == null ) {
             return false;
         }
         ListNode slow = head;
         ListNode fast = head;
 
+        int slowNum = 0;
+        int fastNum = 0;
         while ( fast.next != null && fast.next.next != null && fast.next.next.next != null ) {
 
-            System.out.println( "slow.val=" + slow.val + "   fast.val=" + fast.val );
+            System.out.println( "未相遇：slow.val=" + slow.val + "   fast.val=" + fast.val );
+
             slow = slow.next;
+            slowNum++;
+
             fast = fast.next.next.next;
+            fastNum += 3;
+
             if ( slow == fast ) {
                 System.out.println( "slow.val=" + slow.val + "   fast.val=" + fast.val );
+                System.out.println( slowNum + " " + fastNum );
                 return true;
             }
         }
@@ -61,13 +95,20 @@ public class HasCycle {
         ListNode node4 = new ListNode( 4 );
         ListNode node5 = new ListNode( 5 );
         ListNode node6 = new ListNode( 6 );
+        ListNode node7 = new ListNode( 7 );
+        ListNode node8 = new ListNode( 8 );
         node1.next = node2;
         node2.next = node3;
         node3.next = node4;
         node4.next = node5;
         node5.next = node6;
-        node6.next = node3;
-        System.out.println( hasCycleTest( node1 ) );
+        node6.next = node7;
+        node7.next = node8;
+        node8.next = node6;
+        System.out.println( "此时环入口为 " + node6.val + "号节点" );
+        System.out.println( hasCycleTestByTwo( node1 ) );
+        System.out.println( "此时环入口为 " + node6.val + "号节点" );
+        System.out.println( hasCycleTestByThree( node1 ) );
     }
 
     /**
