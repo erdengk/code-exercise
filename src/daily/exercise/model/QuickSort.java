@@ -53,11 +53,14 @@ public class QuickSort {
 
 
     public static void main( String[] args ) {
-        int[] arr = { 3, 4, 5, 6, 1, 2, 3, 4, 5, 4, 3 };
-        int num = 4;
-        printArray( arr );
-        quickSort( arr );
-        printArray( arr );
+//        int[] arr = { 3, 4, 5, 6, 1, 2, 3, 4, 5, 4, 3 };
+//        int num = 4;
+//        printArray( arr );
+//        quickSort( arr );
+//        printArray( arr );
+        StringBuffer sb = new StringBuffer();
+        char a = 'a';
+        sb.append( a );
     }
 
 
