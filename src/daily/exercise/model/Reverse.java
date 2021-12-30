@@ -9,12 +9,12 @@ package daily.exercise.model;
 
 public class Reverse {
 
-    public static void reverse(int[] arr,int start,int end) {
+    public static void reverse( char[] arr, int start, int end ) {
 
-        for(int i = start-1 ,j=0; i<(start+end)/2;i++,j++){
-            int temp = arr[i];
-            arr[i]=arr[end-1-j];
-            arr[end-1-j]=temp;
+        for ( int i = start, j = end; i < j; i++, j-- ) {
+            char temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
         }
 
     }
