@@ -15,15 +15,15 @@ public class FullArrangement {
     public static List<String> list = new ArrayList<>();
 
 
-    private static void process( char[] ch, int i ) {
-        if ( i == ch.length ) {
+    private static void process( char[] ch, int start ) {
+        if ( start == ch.length ) {
             System.out.println( String.valueOf( ch ) );
             list.add( String.valueOf( ch ) );
         }
-        for ( int j = i; j < ch.length; j++ ) {
-            swap( ch, i, j );
-            process( ch, i + 1 );
-            swap( ch, i, j );
+        for ( int j = start; j < ch.length; j++ ) {
+            swap( ch, start, j );
+            process( ch, start + 1 );
+            swap( ch, start, j );
         }
     }
 
