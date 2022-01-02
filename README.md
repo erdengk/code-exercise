@@ -213,7 +213,7 @@
 
 
 
-[总结：nSum 问题重点是去重](http://erdengk.top/archives/sui-xiang-lu-7)
+:ok_hand: [总结：nSum 问题重点是去重](http://erdengk.top/archives/sui-xiang-lu-7)
 
 
 
@@ -271,9 +271,41 @@
 
 
 
+## 回溯算法
+
+### 组合问题
+
+#### 待选组合无重复元素
+
+[77. 组合](https://leetcode-cn.com/problems/combinations/)
+
+[216. 组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/)
+
+[17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
+
+#### 待选组合无重复元素，但可以多次选取同样的元素
+
+[39. 组合总和](https://leetcode-cn.com/problems/combination-sum/)
+
+#### 待选组合有重复元素，且待选元素只可以被使用一次
+
+[40. 组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/)
 
 
 
+:ok_hand:  [集合问题总结]()
+
+
+
+### 分割问题
+
+### 子集问题
+
+### 排列问题
+
+### 棋盘问题
+
+### other
 
 
 

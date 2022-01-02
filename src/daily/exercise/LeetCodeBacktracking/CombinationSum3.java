@@ -25,18 +25,6 @@ public class CombinationSum3 {
     }
 
 
-    // 全局变量，记录递归函数的递归层数
-    int count = 0;
-
-
-    // 输入 n，打印 n 个 tab 缩进
-    void printIndent( int n ) {
-        for ( int i = 0; i < n; i++ ) {
-            System.out.printf( "    " );
-        }
-    }
-
-
     private void show( int k, int n, int start ) {
         //System.out.println(n+"--"+sum +"  "+ k+"--"+ path.size());
         if ( path.size() == k && sum == n ) {
@@ -64,6 +52,18 @@ public class CombinationSum3 {
 
             printIndent( --count );
             //System.out.println( "i=" + i + "第" + count + "层 ,回溯后=" + path.toString() );
+        }
+    }
+
+
+    // 全局变量，记录递归函数的递归层数
+    int count = 0;
+
+
+    // 输入 n，打印 n 个 tab 缩进
+    void printIndent( int n ) {
+        for ( int i = 0; i < n; i++ ) {
+            System.out.printf( "    " );
         }
     }
 
