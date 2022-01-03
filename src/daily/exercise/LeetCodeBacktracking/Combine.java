@@ -1,6 +1,8 @@
 package daily.exercise.LeetCodeBacktracking;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -20,47 +22,52 @@ public class Combine {
      * @param k
      * @return
      */
-    //结果集合
     List<List<Integer>> res = new ArrayList<>();
     //路径集合
     LinkedList<Integer> path = new LinkedList<>();
 
-    public List<List<Integer>> combine( int n, int k ) {
-        // 从n个数中选取 k 个数， 从 1 开始
-        show( n, k, 1 );
+
+    public List<List<Integer>> findSubsequences( int[] nums ) {
+
+        getSubsequences( nums, 0 );
         return res;
     }
 
 
-    private void show( int n, int k, int start ) {
-        // 收集到了k 个数，res 记录
-        if ( path.size() == k ) {
-            printIndent( count );
-            System.out.println( "进入收集，第" + count + "层 ,收集到结果=" + path.toString() );
+    private void getSubsequences( int[] nums, int start ) {
+        HashMap<Integer,Integer> map = new HashMap<>(200);
+        List<List<Integer>> list = new ArrayList<>();
+
+       list.add( Arrays.asList( 1,2,3 ) );
+
+        if ( path.size() > 1 ) {
             res.add( new ArrayList<>( path ) );
-            return;
+            // 注意这里不要加return，要取树上的节点
         }
-        // 从 start 开始，再选 x 个数，x 取决于之前选取了几个数
-        for ( int i = start; i <= n; i++ ) {
-            printIndent( count++ );
-            System.out.println( "i=" + i + "第" + count + "层 ,回溯前=" + path.toString() );
-            // 新的数加入到集合中
-            path.add( i );
+        int[] used = new int[201];
+        for ( int i = start; i < nums.length; i++ ) {
 
-            // 从下一个数开始选择，直到 当前 path 收集到了k个数
-            show( n, k, i + 1 );
+            if ( !path.isEmpty() && nums[i] < path.getLast() ) {
+                continue;
+            }
 
-            //将上一个加入的数剔除，从下一个数继续执行选择。
+            if ( used[nums[i] + 100] == 1 ) {
+                continue;
+            }
+
+            used[nums[i] + 100] = 1;
+
+            path.add( nums[i] );
+            getSubsequences( nums, i + 1 );
             path.removeLast();
-
-            printIndent( --count );
-            System.out.println( "i=" + i + "第" + count + "层 ,回溯后=" + path.toString() );
         }
     }
 
 
     // 全局变量，记录递归函数的递归层数
     int count = 0;
+
+
     // 输入 n，打印 n 个 tab 缩进
     void printIndent( int n ) {
         for ( int i = 0; i < n; i++ ) {
