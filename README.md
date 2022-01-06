@@ -33,14 +33,25 @@
 
 > **尚未完成，因为生命不息，学习不止，持续更新中...!**
 
+## 已完成的总结
+1. [总结： 你知道二分法的坑吗](http://erdengk.top/archives/er-fen-fa)
+2. [滑动窗口总结 1 ](http://erdengk.top/archives/windows1)
+3. [滑动窗口总结 2 ](http://erdengk.top/archives/sui-xiang-lu-3)
+4. [矩阵打印总结](http://erdengk.top/archives/sui-xiang-lu-4)
+5. [反转链表总结](http://erdengk.top/archives/sui-xiang-lu-5)
+6. [环形链表总结](http://erdengk.top/archives/sui-xiang-lu-6)
+7. [环形链表相关问题(解决下面这几个问题)](http://erdengk.top/archives/sui-xiang-lu-6-1) 
+8. [总结：nSum 问题重点是去重](http://erdengk.top/archives/sui-xiang-lu-7)
+
+
 ## 数组
 
 ### 二分法
 
-1. :ok_hand: [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
-   - [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
-   - [总结： 你知道二分法的坑吗](http://erdengk.top/archives/er-fen-fa)
-   - [仓库代码](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/Search.java)
+- [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
+- [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+- :ok_hand: [总结： 你知道二分法的坑吗](http://erdengk.top/archives/er-fen-fa)
+- [仓库代码](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/Search.java)
 
 
 ### 移除元素
@@ -293,7 +304,7 @@
 
 
 
-:ok_hand:  [集合问题总结]()
+[集合问题总结]()
 
 
 
