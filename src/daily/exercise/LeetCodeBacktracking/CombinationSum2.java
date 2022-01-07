@@ -98,7 +98,8 @@ public class CombinationSum2 {
         }
         for ( int i = start; i < candidates.length && sum + candidates[i] <= target; i++ ) {
             //正确剔除重复解的办法
-            //跳过同一树层使用过的元素
+            //跳过同一树层使用过的元素，当遍历当前元素时，如果发现，该元素与前一个元素一样，就可以直接跳过
+            //https://leetcode-cn.com/problems/subsets-ii/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by-19/231171
             if ( i > start && candidates[i] == candidates[i - 1] ) {
                 continue;
             }
