@@ -46,34 +46,43 @@
 
 ## 数组
 
-### 二分法
+<details>
+<summary>二分法</summary>
 
 - [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
 - [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 - :ok_hand: [总结： 你知道二分法的坑吗](http://erdengk.top/archives/er-fen-fa)
 - [仓库代码](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/Search.java)
 
+</details><br>
 
-### 移除元素
+<details>
+<summary>移除元素</summary>
 
-1. :ok_hand: [27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
-   - [删除有序数组中的重复项（简单）](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
-   - [删除排序链表中的重复元素（简单）](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
-   - [移动零（简单）](https://leetcode-cn.com/problems/move-zeroes/)
-   - [仓库代码](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/RemoveElement.java)
+- [27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
+- [删除有序数组中的重复项（简单）](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
+- [删除排序链表中的重复元素（简单）](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
+- [移动零（简单）](https://leetcode-cn.com/problems/move-zeroes/)
+- [仓库代码](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/RemoveElement.java)
 
-### 有序数组的平方
+</details><br>
 
-1. :ok_hand: [977. 有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/)
+<details>
+<summary>有序数组的平方</summary>
 
-### 长度最小的子数组 (滑动窗口)
+- [977. 有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/)
 
-部分完成 ： :ok_hand:  [滑动窗口总结 1 ](http://erdengk.top/archives/windows1)
-
-:ok_hand:  [滑动窗口总结 2 ](http://erdengk.top/archives/sui-xiang-lu-3)
+</details><br>
 
 
-练习：
+<details>
+<summary>滑动窗口</summary>
+
+- [滑动窗口总结 1 ](http://erdengk.top/archives/windows1)
+- [滑动窗口总结 2 ](http://erdengk.top/archives/sui-xiang-lu-3)
+
+
+### 练习：
 
 注：以下目录整理来自 [wiki](https://github.com/SharingSource/LogicStack-LeetCode/wiki/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3) 与官方推荐 按推荐顺序排列
 
@@ -122,7 +131,13 @@
 
 
 
-### 螺旋矩阵II （矩阵的各种遍历、翻转）
+</details><br>
+
+<details>
+<summary>矩阵的各种遍历、翻转</summary>
+
+
+### 螺旋矩阵II 
 
 这部分的推荐度由我自己评估，仅供参考
 
@@ -138,7 +153,7 @@
 | [48. 旋转图像](https://leetcode-cn.com/problems/rotate-image/) |       5🌟     |      |
 
 
-
+</details><br>
 
 ## 链表
 
