@@ -78,8 +78,6 @@
 <details>
 <summary>滑动窗口</summary>
 
-- [滑动窗口总结 1 ](http://erdengk.top/archives/windows1)
-- [滑动窗口总结 2 ](http://erdengk.top/archives/sui-xiang-lu-3)
 
 
 ### 练习：
@@ -131,7 +129,12 @@
 
 
 
-</details><br>
+</details>
+
+:ok_hand:  [滑动窗口总结 1 ](http://erdengk.top/archives/windows1)
+
+:ok_hand:  [滑动窗口总结 2 ](http://erdengk.top/archives/sui-xiang-lu-3)
+
 
 <details>
 <summary>矩阵的各种遍历、翻转</summary>
@@ -140,9 +143,6 @@
 ### 螺旋矩阵II 
 
 这部分的推荐度由我自己评估，仅供参考
-
-:ok_hand:  [矩阵打印总结](http://erdengk.top/archives/sui-xiang-lu-4)
-
 
 | 题目                                                         |   推荐度 | 备注 |
 | ------------------------------------------------------------ |  ------ | ---- |
@@ -153,47 +153,33 @@
 | [48. 旋转图像](https://leetcode-cn.com/problems/rotate-image/) |       5🌟     |      |
 
 
-</details><br>
+</details>
+
+:ok_hand:  [矩阵打印总结](http://erdengk.top/archives/sui-xiang-lu-4)
+
 
 ## 链表
 
-### 移除链表元素
+<details>
+<summary>反转链表</summary>
 
- [203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
+- [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 
-### 删除链表的倒数第 N 个结点
+- [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
 
-[19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
+- [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
 
-###  两两交换链表中的节点
-
-[24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
-
-### 反转链表
-
-[206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
-
-[92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
-
-[25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
-
-
+</details><br>
 
 :ok_hand:  [反转链表总结](http://erdengk.top/archives/sui-xiang-lu-5)
 
 
+<details>
+<summary>反转链表</summary>
 
+- [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
 
-###  链表相交
-
-[面试题 02.07. 链表相交](https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/)
-
-
-### 环形链表
-
-[141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
-
-[142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+- [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
 
 :ok_hand: [环形链表总结](http://erdengk.top/archives/sui-xiang-lu-6)
 
@@ -206,7 +192,31 @@
 - 为什么此题快慢指针中，快指针比慢指针仅多走一步？为什么这么设置？
 - 如何找到入环节点
 - 证明一下上面方法的正确性
+</details>
 
+:ok_hand: [环形链表总结](http://erdengk.top/archives/sui-xiang-lu-6)
+
+:ok_hand: [环形链表相关问题](http://erdengk.top/archives/sui-xiang-lu-6-1)
+
+<details>
+<summary>other</summary>
+
+### 移除链表元素
+
+[203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
+
+### 删除链表的倒数第 N 个结点
+
+[19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
+
+###  两两交换链表中的节点
+
+[24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
+
+
+###  链表相交
+
+[面试题 02.07. 链表相交](https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/)
 
 
 ### 回文链表
@@ -216,6 +226,8 @@
 ###  设计链表
 
 [707. 设计链表](https://leetcode-cn.com/problems/design-linked-list/)
+
+</details><br>
 
 ## 哈希表
 
