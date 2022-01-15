@@ -277,7 +277,11 @@
 
 ## 字符串
 
-### 翻转相关
+
+
+
+<details>
+<summary>翻转相关 </summary>
 
 [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/)
 
@@ -287,6 +291,8 @@
 
 [剑指 Offer 58 - II. 左旋转字符串](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
 
+
+</details><br>
 
 
 ### other
@@ -305,7 +311,8 @@
 
 
 
-## 双指针法
+<details>
+<summary>双指针法 </summary>
 
 [27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
 
@@ -327,13 +334,19 @@
 
 [18. 四数之和](https://leetcode-cn.com/problems/4sum/)
 
+</details><br>
+
+
 
 
 ## 回溯算法
 
+
 ### 组合问题
 
-#### 待选组合无重复元素
+
+<details>
+<summary>待选组合无重复元素</summary>
 
 [77. 组合](https://leetcode-cn.com/problems/combinations/)
 
@@ -341,18 +354,28 @@
 
 [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
 
-#### 待选组合无重复元素，但可以多次选取同样的元素
+
+</details><br>
+
+<details>
+<summary>待选组合无重复元素，但可以多次选取同样的元素</summary>
+
 
 [39. 组合总和](https://leetcode-cn.com/problems/combination-sum/)
 
-#### 待选组合有重复元素，且待选元素只可以被使用一次
+</details><br>
+
+
+<details>
+<summary>待选组合有重复元素，且待选元素只可以被使用一次</summary>
+
 
 [40. 组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/)
 
+</details><br>
 
 
-[集合问题总结]()
-
+:okhard: [集合问题总结](http://erdengk.top/archives/sui-xiang-lu-9)
 
 
 ### 分割问题
