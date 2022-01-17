@@ -3,7 +3,11 @@ package daily.exercise.model;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.Scanner;
+import java.lang.*;
 
 /**
  * @ClassName: InputModle
@@ -13,7 +17,6 @@ import java.util.Scanner;
  */
 
 public class InputModle {
-
 
 
     public static void inputRow() {
@@ -118,6 +121,113 @@ public class InputModle {
             System.out.println(sum);
         }
 
+    }
+
+    public static void inputString(){
+        //链接：https://ac.nowcoder.com/acm/contest/5657/H
+        //来源：牛客网
+        //
+        //输入描述:
+        //输入有两行，第一行n
+        //
+        //第二行是n个字符串，字符串之间用空格隔开
+        //输出描述:
+        //输出一行排序后的字符串，空格隔开，无结尾空格
+        //示例1
+        //输入
+        //复制
+        //5
+        //c d a bb e
+        //输出
+        //复制
+        //a bb c d e
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNextLine()){
+            int length = sc.nextInt();
+            sc.nextLine();
+            String[] temp = sc.nextLine().split(" ");
+            Arrays.sort(temp);
+            for(int i = 0 ; i < length;i++){
+                System.out.print(temp[i]+" ");
+            }
+        }
+    }
+    public static void inputStrings(){
+        //链接：https://ac.nowcoder.com/acm/contest/5657/I
+        //来源：牛客网
+        //
+        //输入描述:
+        //多个测试用例，每个测试用例一行。
+        //
+        //每行通过空格隔开，有n个字符，n＜100
+        //输出描述:
+        //对于每组测试用例，输出一行排序过的字符串，每个字符串通过空格隔开
+        //示例1
+        //输入
+        //复制
+        //a c bb
+        //f dddd
+        //nowcoder
+        //输出
+        //复制
+        //a bb c
+        //dddd f
+        //nowcoder
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNextLine()){
+            String[] temp = sc.nextLine().split(" ");
+            //sc.nextLine();
+            Arrays.sort(temp);
+            for(String temps:temp){
+                System.out.print(temps+" ");
+            }
+            System.out.println();
+        }
+    }
+    public static void intputStr(){
+        //链接：https://ac.nowcoder.com/acm/contest/5657/J
+        //来源：牛客网
+        //
+        //输入描述:
+        //多个测试用例，每个测试用例一行。
+        //每行通过,隔开，有n个字符，n＜100
+        //输出描述:
+        //对于每组用例输出一行排序后的字符串，用','隔开，无结尾空格
+        //示例1
+        //输入
+        //复制
+        //a,c,bb
+        //f,dddd
+        //nowcoder
+        //输出
+        //复制
+        //a,bb,c
+        //dddd,f
+        //nowcoder
+
+        //Scanner in=new Scanner(System.in);
+        //        while(in.hasNext()){
+        //            String[] s=in.nextLine().split(",");
+        //            Arrays.sort(s);
+        //            System.out.println(String.join(",",s));
+        //        }
+
+        Scanner in =
+                new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+        PrintWriter out =
+                new PrintWriter(new OutputStreamWriter(System.out));
+
+        while(in.hasNextLine()){
+            String[] strs = in.nextLine().split(",");
+            Arrays.sort(strs);
+            for(int i = 0 ;i<strs.length-1;i++){//无结尾空格
+                out.print(strs[i]);
+                out.print(",");
+            }
+            out.println(strs[strs.length-1]);
+        }
+
+        out.flush();
     }
     public static void main( String[] args ) {
         //inputRow();

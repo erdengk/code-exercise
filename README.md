@@ -126,6 +126,7 @@
 | [1610. 可见点的最大数目](https://leetcode-cn.com/problems/maximum-number-of-visible-points/) |      | 4🌟     |      |
 | [30. 串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/) |      | 2🌟     |      |
 | [632. 最小区间（hard）](https://leetcode-cn.com/problems/smallest-range-covering-elements-from-k-lists/) |      | ？     |      |
+| [862. 和至少为 K 的最短子数组](https://leetcode-cn.com/problems/shortest-subarray-with-sum-at-least-k/) | |    4🌟  |
 
 
 
@@ -151,7 +152,6 @@
 | [剑指 Offer 29. 顺时针打印矩阵](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/) |       4🌟     |      |
 | [之字形打印矩阵](https://github.com/erdengk/codeExercise/blob/main/src/daily/exercise/LeetCodeArray/ArrayPrint/PrintArrayByZ.java)                                           |       5🌟     |      |
 | [48. 旋转图像](https://leetcode-cn.com/problems/rotate-image/) |       5🌟     |      |
-
 
 </details>
 
