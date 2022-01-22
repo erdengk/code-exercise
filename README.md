@@ -165,8 +165,10 @@
 - [304. 二维区域和检索 - 矩阵不可变](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/)
 - [560. 和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
 - [1314. 矩阵区域和](https://leetcode-cn.com/problems/matrix-block-sum/)
-
+- [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)
+- [1248. 统计「优美子数组」](https://leetcode-cn.com/problems/count-number-of-nice-subarrays/)
 </details><br>
+
 
 
 <details>
@@ -178,6 +180,7 @@
 
 </details><br>
 
+:ok_hand: [差分数组]()
 ## 链表
 
 <details>
