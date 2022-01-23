@@ -180,7 +180,7 @@
 
 </details><br>
 
-:ok_hand: [差分数组]()
+
 ## 链表
 
 <details>
@@ -310,7 +310,7 @@
 
 [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/)
 
-[KMP算法]()
+
 
 
 
