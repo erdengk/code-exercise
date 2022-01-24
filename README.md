@@ -41,7 +41,8 @@
 5. [反转链表总结](http://erdengk.top/archives/sui-xiang-lu-5)
 6. [环形链表总结](http://erdengk.top/archives/sui-xiang-lu-6)
 7. [环形链表相关问题(解决下面这几个问题)](http://erdengk.top/archives/sui-xiang-lu-6-1) 
-8. [总结：nSum 问题重点是去重](http://erdengk.top/archives/sui-xiang-lu-7)
+8. [总结：nSum 问题重点是去重](http://erdengk.top/archives/sui-xiang-lu-7) 
+9. [前缀和数组](http://erdengk.top/archives/sui-xiang-lu-10--fan-wai)
 
 
 ## 数组
@@ -169,7 +170,7 @@
 - [1248. 统计「优美子数组」](https://leetcode-cn.com/problems/count-number-of-nice-subarrays/)
 </details><br>
 
-
+:ok_hand:  [【随想录10-番外 】前缀和数组](http://erdengk.top/archives/sui-xiang-lu-10--fan-wai)
 
 <details>
 <summary>差分数组</summary>
