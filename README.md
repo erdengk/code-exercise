@@ -407,6 +407,17 @@
 
 
 
+## 贪心
+
+。。。。
+
+## 动态规划
+
+。。。。
+
+
+
+
 ## 单调栈
 
 [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures/)
