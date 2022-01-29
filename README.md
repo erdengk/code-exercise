@@ -409,7 +409,12 @@
 
 ## 贪心
 
-。。。。
+[455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/)
+
+[376. 摆动序列](https://leetcode-cn.com/problems/wiggle-subsequence/)
+
+[53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)
+
 
 ## 动态规划
 
