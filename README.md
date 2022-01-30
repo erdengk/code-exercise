@@ -415,6 +415,15 @@
 
 [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)
 
+---
+
+[1005. K 次取反后最大化的数组和](https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/)
+
+[55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)
+
+[45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)
+
+[122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
 
 ## 动态规划
 
