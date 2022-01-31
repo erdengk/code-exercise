@@ -425,6 +425,16 @@
 
 [122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
 
+---
+
+[860. 柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/)
+
+[406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)
+
+[134. 加油站](https://leetcode-cn.com/problems/gas-station/)
+
+[135. 分发糖果](https://leetcode-cn.com/problems/candy/)
+
 ## 动态规划
 
 ### 简单动态
