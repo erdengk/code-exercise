@@ -435,6 +435,16 @@
 
 [135. 分发糖果](https://leetcode-cn.com/problems/candy/)
 
+---
+
+[452. 用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/)
+
+[435. 无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/)
+
+[763. 划分字母区间](https://leetcode-cn.com/problems/partition-labels/)
+
+[56. 合并区间](https://leetcode-cn.com/problems/merge-intervals/)
+
 ## 动态规划
 
 ### 简单动态
