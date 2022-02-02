@@ -445,6 +445,16 @@
 
 [56. 合并区间](https://leetcode-cn.com/problems/merge-intervals/)
 
+---
+
+[738. 单调递增的数字](https://leetcode-cn.com/problems/monotone-increasing-digits/)
+
+[714. 买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
+
+[968. 监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/)
+
+
+
 ## 动态规划
 
 ### 简单动态
