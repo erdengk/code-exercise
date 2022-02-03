@@ -38,7 +38,9 @@ public class Main1 {
         }
         return new String( arr );
     }
-    static  String down( String s, int j ) {
+
+
+    static String down( String s, int j ) {
         char[] arr = s.toCharArray();
         if ( arr[j] == '0' ) {
             arr[j] = '9';
@@ -48,32 +50,43 @@ public class Main1 {
         return new String( arr );
     }
 
+
     // 方向数组，分别代表上、下、左、右
-    static int[][] dirs = new int[][]{{-1,0}, {1,0}, {0,-1}, {0,1}};
-    static void dfs(int[][] grid, int i, int j,boolean[][] visited){
+    static int[][] dirs = new int[][]{ { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
+
+
+    static void dfs( int[][] grid, int i, int j, boolean[][] visited ) {
         int m = grid.length, n = grid[0].length;
-        if (i < 0 || j < 0 || i >= m || j >= n) {
+        if ( i < 0 || j < 0 || i >= m || j >= n ) {
             // 超出索引边界
             return;
         }
-        if (visited[i][j]) {
+        if ( visited[i][j] ) {
             // 已遍历过 (i, j)
             return;
         }
         visited[i][j] = true;
-        System.out.println(grid[i][j]);
-        for (int[] d : dirs) {
+        System.out.println( grid[i][j] );
+        for ( int[] d : dirs ) {
             int next_i = i + d[0];
             int next_j = j + d[1];
-            dfs(grid, next_i, next_j,visited);
+            dfs( grid, next_i, next_j, visited );
         }
     }
+
+
+
     public static void main( String[] args ) {
-        int [][]grid=new int[][]{
-                {1,2,3},{4,5,6},{7,8,9}
+        int a = 0, b = 0, c = 0;
+        System.out.println( a );
+        System.out.println( b );
+        System.out.println( c );
+
+        int[][] grid = new int[][]{
+                { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }
         };
-        boolean [][] visited = new boolean[3][3];
-        dfs(grid,0,0,visited);
+        boolean[][] visited = new boolean[3][3];
+        dfs( grid, 0, 0, visited );
 
 //        Scanner sc = new Scanner( System.in );
 //        int n = sc.nextInt();
