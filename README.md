@@ -465,7 +465,13 @@
 
 [746. 使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs/)
 
+----
 
+[62. 不同路径](https://leetcode-cn.com/problems/unique-paths/)
+
+[63. 不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/)
+
+[343. 整数拆分](https://leetcode-cn.com/problems/integer-break/)
 
 
 ### 简单动态
