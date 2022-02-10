@@ -16,8 +16,6 @@ import java.util.Stack;
 
 public class TreeModle {
 
-
-
     public List<Integer> treeDFS( TreeNode root ) {
         List<Integer> res = new ArrayList<>();
         if ( root == null ) {
