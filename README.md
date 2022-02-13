@@ -485,6 +485,16 @@
 
 [343. 整数拆分](https://leetcode-cn.com/problems/integer-break/)
 
+[501. 二叉搜索树中的众数](https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/)
+
+
+
+[474. 一和零](https://leetcode-cn.com/problems/ones-and-zeroes/)
+
+[494. 目标和](https://leetcode-cn.com/problems/target-sum/)
+
+
+
 
 ### 简单动态
 
