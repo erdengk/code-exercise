@@ -487,13 +487,17 @@
 
 [501. 二叉搜索树中的众数](https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/)
 
+---
+
 
 
 [474. 一和零](https://leetcode-cn.com/problems/ones-and-zeroes/)
 
 [494. 目标和](https://leetcode-cn.com/problems/target-sum/)
 
+[518. 零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)
 
+[377. 组合总和 Ⅳ](https://leetcode-cn.com/problems/combination-sum-iv/)
 
 
 ### 简单动态
