@@ -37,6 +37,11 @@ public class FindContentChildren {
         }
         return res;
     }
+
+
+
+
+
     public int findContentChildrenTwo( int[] g, int[] s ) {
         if ( s.length == 0 ) {
             return 0;
@@ -46,11 +51,12 @@ public class FindContentChildren {
         Arrays.sort( s );
         int index = 0;
         for ( int i = 0; i < s.length; i++ ) {
-            if(index<g.length && s[i] >= g[index]){
+            if ( index < g.length && s[i] >= g[index] ) {
                 res++;
                 index++;
             }
         }
         return res;
     }
+
 }
