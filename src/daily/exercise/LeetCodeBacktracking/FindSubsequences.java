@@ -12,8 +12,10 @@ import java.util.List;
  */
 
 public class FindSubsequences {
+
     /**
      * https://leetcode-cn.com/problems/increasing-subsequences/
+     *
      * @param nums
      * @return
      */
@@ -21,33 +23,63 @@ public class FindSubsequences {
     List<List<Integer>> res = new ArrayList<>();
     //路径集合
     LinkedList<Integer> path = new LinkedList<>();
-    public List<List<Integer>> findSubsequences(int[] nums) {
-        getSubsequences(nums,0);
+
+
+    public List<List<Integer>> findSubsequences( int[] nums ) {
+        getSubsequences( nums, 0 );
         return res;
     }
 
 
     private void getSubsequences( int[] nums, int start ) {
-        if(path.size()>1 ){
-            res.add( new ArrayList<>(path) );
+        if ( path.size() > 1 ) {
+            res.add( new ArrayList<>( path ) );
             return;
         }
 
-        for(int i=start ;i < nums.length ;i++){
+        for ( int i = start; i < nums.length; i++ ) {
 
-            if(path.size()>1 && path.getLast()<nums[i]){
+            if ( path.size() > 1 && path.getLast() < nums[i] ) {
                 return;
             }
-            if(i>start && nums[i-1] > nums[i]){
+            if ( i > start && nums[i - 1] > nums[i] ) {
                 return;
             }
             path.add( nums[i] );
-
-            getSubsequences( nums,i+1 );
-
+            getSubsequences( nums, i + 1 );
             path.removeLast();
         }
     }
+    /** 使用map
+     //结果集合
+     List<List<Integer>> res = new ArrayList<>();
+     //路径集合
+     LinkedList<Integer> path = new LinkedList<>();
+     public List<List<Integer>> findSubsequences(int[] nums) {
+     getSubsequences(nums,0);
+     return res;
+     }
+     private void getSubsequences( int[] nums, int start ) {
+     if(path.size()>1 ){
+     res.add( new ArrayList<>(path) );
+     // 注意这里不要加return，要取树上的节点
+     }
+     HashMap<Integer,Integer> map = new HashMap<>();
+     for(int i=start ;i < nums.length ;i++){
+     if(!path.isEmpty() && nums[i]< path.getLast()){
+     continue;
+     }
+     if ( map.getOrDefault( nums[i],0 ) >=1 ){
+     continue;
+     }
+     map.put(nums[i],map.getOrDefault( nums[i],0 )+1);
+     path.add( nums[i] );
+     getSubsequences( nums,i+1 );
+     path.removeLast();
+
+     }
+     }
+     */
     //TODO 为随想录添加新的解法
     //https://leetcode-cn.com/problems/increasing-subsequences/
     //https://www.programmercarl.com/0491.%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.html#%E6%80%9D%E8%B7%AF
