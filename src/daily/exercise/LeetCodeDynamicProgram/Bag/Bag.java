@@ -1,4 +1,4 @@
-package daily.exercise.LeetCodeDynamicProgram;
+package daily.exercise.LeetCodeDynamicProgram.Bag;
 
 /**
  * @ClassName: Bag
@@ -116,6 +116,41 @@ public class Bag {
     }
 
 
+    public static int dpWay( int[] w, int[] v, int bag ) {
+        int N = w.length;
+        int[][] dp = new int[N + 1][bag + 1];
+        // dp[N][...] = 0
+        for ( int index = N - 1; index >= 0; index-- ) {
+            // rest < 0
+            for ( int rest = 0; rest <= bag; rest++ ) {
+
+                int p1 = dp[index + 1][rest];
+                int p2 = -1;
+                if ( rest - w[index] >= 0 ) {
+                    p2 = v[index] + dp[index + 1][rest - w[index]];
+                }
+                dp[index][rest] = Math.max( p1, p2 );
+
+
+//                int p1 = process2( w, v, index + 1, rest );
+//                int p2 = Integer.MIN_VALUE;
+//                if ( rest >= w[index] ) {
+//                    p2 = v[index] + process2( w, v, index + 1, rest - w[index] );
+//                }
+//                return Math.max( p1, p2 );
+
+            }
+        }
+        for ( int i = 0; i < dp.length; i++ ) {
+            for ( int j = 0; j < dp[0].length; j++ ) {
+                System.out.printf( "%3d", dp[i][j] );
+            }
+            System.out.println();
+        }
+        return dp[0][bag];
+    }
+
+
     public static void dynamicByBag( int[] weight, int[] value, int index, int rest ) {
         int[][] dp = new int[N + 1][W + 1];
 
@@ -171,7 +206,13 @@ public class Bag {
 //        getValue();
 //        System.out.println( getMaxValue( weight, value, W ) );
 //        System.out.println( process2( weight, value, 0, W ) );
-        dynamicByBag( weight, value, 0, W );
+
+//        dynamicByBag( weight, value, 0, W );
+
+//        System.out.println("暴力递归");
+//        System.out.println( process2( weight, value, 0, W ) );
+        System.out.println( "暴力递归改为动态规划" );
+        System.out.println( dpWay( weight, value, 5 ) );
 
 //        int[] weight = { 1, 2, 3 };
 //        int[] value = { 6, 9, 13 };
