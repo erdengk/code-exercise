@@ -1,5 +1,7 @@
 package daily.exercise.LeetCodeDynamicProgram.Bag;
 
+import java.util.Arrays;
+
 /**
  * @ClassName: Bag
  * @Description:
@@ -131,7 +133,6 @@ public class Bag {
                 }
                 dp[index][rest] = Math.max( p1, p2 );
 
-
 //                int p1 = process2( w, v, index + 1, rest );
 //                int p2 = Integer.MIN_VALUE;
 //                if ( rest >= w[index] ) {
@@ -200,6 +201,29 @@ public class Bag {
             System.out.print( "\n" );
         }
     }
+    public static void getValueWrongWay() {
+        int sum[] = new int[W+1];
+
+        for ( int i = 0; i <N; i++ ) {
+            for ( int j = weight[i]; j <= W ; j++ ) {
+                sum[j] = Math.max( sum[j], sum[j - weight[i]] + value[i] );
+                System.out.println("此时i="+ i + "  j=" + j + "  整个数组情况为：" + Arrays.toString( sum ) );
+            }
+        }
+        System.out.println(sum[W]);
+    }
+
+    public static void getValue1() {
+        int sum[] = new int[W+1];
+
+        for ( int i = 0; i <N; i++ ) {
+            for ( int j = W; j >= weight[i]; j-- ) {
+                sum[j] = Math.max( sum[j], sum[j - weight[i]] + value[i] );
+                System.out.println("此时i="+ i + "  j=" + j + "  整个数组情况为：" + Arrays.toString( sum ) );
+            }
+        }
+		System.out.println(sum[W]);
+    }
 
 
     public static void main( String[] args ) {
@@ -211,14 +235,18 @@ public class Bag {
 
 //        System.out.println("暴力递归");
 //        System.out.println( process2( weight, value, 0, W ) );
-        System.out.println( "暴力递归改为动态规划" );
-        System.out.println( dpWay( weight, value, 5 ) );
+//        System.out.println( "暴力递归改为动态规划" );
+//        System.out.println( dpWay( weight, value, 5 ) );
 
 //        int[] weight = { 1, 2, 3 };
 //        int[] value = { 6, 9, 13 };
 //        int bagsize = 5;
 //        testweightbagproblem( weight, value, bagsize );
 
+        System.out.println("一纬数组优化");
+        getValue1();
+//        System.out.println("一纬数组优化错误示范");
+//        getValueWrongWay();
     }
 
 }
