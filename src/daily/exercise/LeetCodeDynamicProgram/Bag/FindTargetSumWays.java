@@ -1,5 +1,7 @@
 package daily.exercise.LeetCodeDynamicProgram.Bag;
 
+import java.util.LinkedList;
+
 /**
  * @ClassName: FindTargetSumWays
  * @Description:
