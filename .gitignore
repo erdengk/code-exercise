@@ -27,5 +27,5 @@ replay_pid*
 /.idea
 /out
 
-/src/daily/exercise/test/
+/src/dailyExercise/test/
 code-exercise.iml
