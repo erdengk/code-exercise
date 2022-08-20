@@ -22,6 +22,7 @@ public class MinSubArrayLen {
         for ( int right = 0; right < nums.length; right++ ) {
             sum = sum + nums[right];
             while ( sum >= target ) {
+                //System.out.println("--"+l+"--"+r+"--"+sum);
                 res = Math.min( right - l + 1, res );
                 sum = sum - nums[l++];
             }
