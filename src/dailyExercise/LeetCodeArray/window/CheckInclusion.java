@@ -54,5 +54,12 @@ public class CheckInclusion {
         return f;
     }
 
+    public static void main(String[] args) {
+        String  s = "s1111";
+        s = s.substring(1,2);
+        StringBuilder s1 = new StringBuilder(s);
+        s1.reverse().toString()
+        System.out.println(s);
+    }
 
 }
