@@ -53,4 +53,13 @@ public class CheckInclusion {
         }
         return f;
     }
+
+    public static void main(String[] args) {
+        String  s = "123";
+        String  s1 = "1234";
+
+        System.out.println(s.indexOf(s1));
+        System.out.println(s1.indexOf(s));
+    }
+
 }

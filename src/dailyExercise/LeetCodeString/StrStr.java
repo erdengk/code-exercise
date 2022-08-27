@@ -1,5 +1,8 @@
 package dailyExercise.LeetCodeString;
 
+import java.util.*;
+import java.util.function.ToIntFunction;
+
 /**
  * @ClassName: StrStr
  * @Description:
@@ -11,67 +14,41 @@ public class StrStr {
 
     /**
      * https://leetcode-cn.com/problems/implement-strstr/
+     *
      * @param haystack
      * @param needle
      * @return
      */
-    public int strStr(String haystack, String needle) {
-        return getIndexOf(haystack,needle);
-    }
-    public int getIndexOf(String s1, String s2) {
-        if (s1 == null || s2 == null || s2.length() < 1 || s1.length() < s2.length()) {
-            return -1;
+    public static int strStr(String haystack, String needle) {
+        if (needle.length() == 0) return 0;
+        int[] next = new int[needle.length()];
+        getNext(next, needle);
+
+        int j = 0;
+        for (int i = 0; i < haystack.length(); i++) {
+            while (j > 0 && needle.charAt(j) != haystack.charAt(i))
+                // 不对应时看前一位的位置
+                j = next[j - 1];
+            if (needle.charAt(j) == haystack.charAt(i))
+                // 继续往后匹配 i 和 j 同时往后移动
+                j++;
+            if (j == needle.length())
+                return i - needle.length() + 1;
         }
-        char[] str = s1.toCharArray();
-        char[] match = s2.toCharArray();
-        int x = 0;
-        int y = 0;
-        // O(M) m <= n
-        int[] next = getNextArray(match);
-        // O(N)
-        while (x < str.length && y < match.length) {
-            if (str[x] == match[y]) {
-                x++;
-                y++;
-            } else if (next[y] == -1) { // y == 0 str往后一个位置
-                x++;
-            } else {
-                //match无法继续匹配，回到当前字符前面字串的最大相等位置的下一个位置继续匹配
-                y = next[y];
-            }
-        }
-        // y 越界 返回 -1
-        // x 越界。y 越界 最后一段匹配了
-        // x 没越界，y越界了， str 中有一部分是匹配到了match。也就是在 x-y位置
-        return y == match.length ? x - y : -1;
+        return -1;
     }
 
-    //求next数组过程
-    public  int[] getNextArray(char[] match) {
-        if (match.length == 1) {
-            return new int[] { -1 };
+    private static void getNext(int[] next, String s) {
+        int j = 0;
+        next[0] = 0;
+        for (int i = 1; i < s.length(); i++) {
+            while (j > 0 && s.charAt(j) != s.charAt(i))
+                // 不相等时，回退到前一位
+                j = next[j - 1];
+            if (s.charAt(j) == s.charAt(i))
+                // 相等时，前后缀长度+1
+                j++;
+            next[i] = j;
         }
-        int[] next = new int[match.length];
-        // 0 位置匹配不到，则直接无法继续
-        next[0] = -1;
-        // 1 位置匹配不到，则返回 0 位置继续下一轮的匹配
-        next[1] = 0;
-        int i = 2; // 目前在哪个位置上求next数组的值
-        int cn = 0; // 当前是哪个位置的值再和i-1位置的字符比较
-        while (i < next.length) {
-            // 当前位置的前一个位置的字符 如果与他记录的 next数组中元素位置的字符相等
-            // 那这个位置的next元素为cn加1
-            if (match[i - 1] == match[cn]) { // 配成功的时候
-                next[i] = cn+1;
-                i++;
-                cn++;
-            } else if (cn > 0) {
-                // 不断的找上个位置，若回退到字符串开头。0 ，则代表没有前后缀公共长度为0
-                cn = next[cn];
-            } else {
-                next[i++] = 0;
-            }
-        }
-        return next;
     }
 }
