@@ -238,13 +238,13 @@ public class Bag {
 //        System.out.println( "暴力递归改为动态规划" );
 //        System.out.println( dpWay( weight, value, 5 ) );
 
-//        int[] weight = { 1, 2, 3 };
-//        int[] value = { 6, 9, 13 };
-//        int bagsize = 5;
-//        testweightbagproblem( weight, value, bagsize );
+        int[] weight = { 1, 5, 5, 11 };
+        int[] value = { 6, 9, 13, 15 };
+        int bagsize = 12;
+        testweightbagproblem( weight, value, bagsize );
 
-        System.out.println("一纬数组优化");
-        getValue1();
+//        System.out.println("一纬数组优化");
+//        getValue1();
 //        System.out.println("一纬数组优化错误示范");
 //        getValueWrongWay();
     }
